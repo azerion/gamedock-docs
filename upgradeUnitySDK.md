@@ -83,4 +83,20 @@ Configure Android resolver settings from Assets > External Dependency Manager > 
 * **Enable** - Use Jetifier
 * **Disable** - Patch gradleTemplate.properties
 
-Resolve Android dependencies from Assets > External Dependency Manager > Android Resolver > Resolve 
+Edit Assets/Plugins/Android/mainTemplate.gradle to add WorkManager dependency for apps targeting **Android 12**.
+~~~java
+dependencies {
+  ....
+    constraints {
+        implementation('androidx.work:work-runtime:2.7.0') {
+          because '''androidx.work:work-runtime:2.1.0 pulled from
+          play-services-ads has a bug using PendingIntent without
+          FLAG_IMMUTABLE or FLAG_MUTABLE and will fail in Apps
+          targeting S+.'''
+        }
+    }
+  ....
+}  
+~~~
+
+Resolve Android dependencies from Assets > External Dependency Manager > Android Resolver > Force Resolve 
