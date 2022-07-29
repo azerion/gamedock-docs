@@ -6,6 +6,7 @@
   * [![github pages](_images/sidebar/gdprPrivacyPolicy.svg)GDPR & Privacy policy](gdprPrivacyPolicy.md "GDPR & Privacy policy")
   * [![github pages](_images/sidebar/platformSpecific.svg)Platform Specific Components](platformSpecificComponents.md "Platform Specific Components")
   * [![github pages](_images/sidebar/unityEditor.svg)Unity Editor](unityEditorMode.md "Unity Editor")
+  * [![github pages](_images/sidebar/unityEditor.svg)Upgrade to Unity SDK 5.2.x](upgradeUnitySDK.md "Upgrade to Unity SDK 5.2.x")
 * [Content](content.md "Content")
   * [![github pages](_images/sidebar/gameConfig.svg)Game Config](gameBalancing.md "Game Config")
   * [![github pages](_images/sidebar/shopWalletInventory.svg)Wallet, Inventory & Shop](shopWalletInventoryControl.md "Wallet, Inventory & Shop")
