@@ -17,7 +17,56 @@ Close Unity Editor, goto project directory and remove followings:
 * Assets/Plugins/ios/GamedockAppController.mm
 * Assets/Plugins/ios/Gamedock.framework
 
-### Integrating SDK via UPM
+### Remove existing Gamedock dependencies
+Remove followings from Assets/Plugins/Android/mainTemplate.gradle
+~~~java
+dependencies {
+  ....
+    implementation 'androidx.multidex:multidex:x.x.x' /* Gamedock Dependency */
+    implementation 'androidx.appcompat:appcompat:x.x.x' /* Gamedock Dependency */
+    implementation 'androidx.recyclerview:recyclerview:x.x.x' /* Gamedock Dependency */
+    implementation 'androidx.cardview:cardview:x.x.x' /* Gamedock Dependency */
+    implementation 'com.google.android.gms:play-services-analytics:x.x.x' /* Gamedock Dependency */
+    implementation 'com.google.android.gms:play-services-basement:x.x.x' /* Gamedock Dependency */
+    implementation 'com.google.android.gms:play-services-games:x.x.x' /* Gamedock Dependency */
+    implementation 'com.google.android.gms:play-services-auth:x.x.x' /* Gamedock Dependency */
+    implementation 'com.google.android.gms:play-services-drive:x.x.x' /* Gamedock Dependency */
+    implementation 'com.google.android.gms:play-services-nearby:x.x.x' /* Gamedock Dependency */
+    implementation 'io.reactivex.rxjava2:rxandroid:x.x.x' /* Gamedock Dependency */
+    implementation 'io.reactivex.rxjava2:rxjava:x.x.x' /* Gamedock Dependency */
+    implementation 'com.google.code.gson:gson:x.x.x' /* Gamedock Dependency */
+    implementation 'com.squareup.picasso:picasso:x.x.x' /* Gamedock Dependency */
+    implementation 'com.android.billingclient:billing:x.x.x' /* Gamedock Dependency */
+
+    implementation 'io.gamedock.sdk:gamedock-sdk:x.x.x' /* Gamedock Main Module */
+
+    implementation 'com.google.firebase:firebase-analytics:x.x.x' /* Gamedock Firebase */
+    implementation 'com.google.firebase:firebase-crashlytics:x.x.x' /* Gamedock Firebase */
+    implementation 'com.google.firebase:firebase-crashlytics-ndk:x.x.x' /* Gamedock Firebase */
+    implementation 'com.google.firebase:firebase-messaging:x.x.x' /* Gamedock Firebase */
+    implementation 'com.google.firebase:firebase-dynamic-links:x.x.x' /* Gamedock Firebase */
+    implementation 'com.google.firebase:firebase-config:x.x.x' /* Gamedock Firebase */
+  ....
+}  
+~~~
+
+Remove followings from Assets/Plugins/Android/AndroidManifest.xml
+~~~xml
+<manifest>
+  <application>
+  ....
+    <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:authorities="${applicationId}.firebaseinitprovider" tools:node="remove" />
+    <service android:name="io.gamedock.sdk.utils.gcm.GCMListenerService" android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+      </intent-filter>
+    </service>
+  ....
+  </application>
+</manifest>
+~~~
+
+### Integrate SDK via UPM
 
 Update Packages/manifest.json to add scope registries and dependencies:
 
@@ -49,8 +98,35 @@ Update Packages/manifest.json to add scope registries and dependencies:
 > [!TIP]
 > Scope registries can also be added from Unity Editor [Edit > Project Settings > Package Manager]
 
-### Unity Editor inspection
+### Dependency management
 Open Unity Editor
+
+For dependency resolution use **External Dependency Manager for Unity (EDM4U)**
+
+#### iOS dependency
+Configure iOS resolver settings from Assets > External Dependency Manager > iOS Resolver > Settings 
+* Check the *Enable Swift Framework Support Workaround* 
+
+![github pages](_images/upgradeUnitySDK/upgradeUnitySDK6.png)
+
+#### Android dependency
+Go to Project Settings > Publishing Settings 
+* **Enable** *Custom Main Gradle Template* option to add mainTemplate.gradle 
+* **Enable** *Custom Gradle Properties Template* option to add gradleTemplate.properties
+
+Configure Android resolver settings from Assets > External Dependency Manager > Android Resolver > Settings 
+* **Enable** - Patch mainTemplate.gradle
+* **Enable** - Use Jetifier
+* **Disable** - Patch gradleTemplate.properties
+
+![github pages](_images/upgradeUnitySDK/upgradeUnitySDK7.png)
+
+
+> #### Important! <br>
+  **Resolve Android dependencies** from *Assets > External Dependency Manager > Android Resolver > **Force Resolve*** <br>
+  If you make any changes which affect Android dependencies, then run Resolver again.
+
+### Unity Editor inspection
 
 #### Check GamedockSDK gameobject
 Check if all the values are properly set in the Inspector window. Bundle Id unity field might be empty after SDK update.
@@ -65,38 +141,6 @@ Go to the Azerion > Gamedock SDK > Configuration. Make sure the fields are confi
 
 ![github pages](_images/upgradeUnitySDK/upgradeUnitySDK3.png)
 
-### Dependency management
-For dependency resolution use External Dependency Manager for Unity (EDM4U)
+![github pages](_images/upgradeUnitySDK/upgradeUnitySDK4.png)
 
-#### iOS dependency
-Configure iOS resolver settings from Assets > External Dependency Manager > iOS Resolver > Settings 
-* Check the *Enable Swift Framework Support Workaround* 
-* Leave the *Swift Framework Version* blank
-
-#### Android dependency
-Go to Project Settings > Publishing Settings 
-* **Enable** *Custom Main Gradle Template* option to add mainTemplate.gradle 
-* **Enable** *Custom Gradle Properties Template* option to add gradleTemplate.properties
-
-Configure Android resolver settings from Assets > External Dependency Manager > Android Resolver > Settings 
-* **Enable** - Patch mainTemplate.gradle
-* **Enable** - Use Jetifier
-* **Disable** - Patch gradleTemplate.properties
-
-Edit Assets/Plugins/Android/mainTemplate.gradle to add WorkManager dependency for apps targeting **Android 12**.
-~~~java
-dependencies {
-  ....
-    constraints {
-        implementation('androidx.work:work-runtime:2.7.0') {
-          because '''androidx.work:work-runtime:2.1.0 pulled from
-          play-services-ads has a bug using PendingIntent without
-          FLAG_IMMUTABLE or FLAG_MUTABLE and will fail in Apps
-          targeting S+.'''
-        }
-    }
-  ....
-}  
-~~~
-
-Resolve Android dependencies from Assets > External Dependency Manager > Android Resolver > Force Resolve 
+![github pages](_images/upgradeUnitySDK/upgradeUnitySDK5.png)
