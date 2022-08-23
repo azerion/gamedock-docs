@@ -18,8 +18,18 @@ Close Unity Editor, goto project directory and remove followings:
 * Assets/Plugins/ios/Gamedock.framework
 
 ### Remove existing Gamedock dependencies
-Remove followings from Assets/Plugins/Android/mainTemplate.gradle
+Remove following lines from Assets/Plugins/Android/mainTemplate.gradle or just delete the 'mainTemplate.gradle' file if you are not managing it manually.  
 ~~~java
+
+repositories { /* Gamedock Dependency */
+	mavenCentral() /* Gamedock Dependency */
+	google() /* Gamedock Dependency */
+	maven { /* Gamedock Dependency */
+		url 'https://maven.google.com/' /* Gamedock Dependency */
+		name 'Google' /* Gamedock Dependency */
+	} /* Gamedock Dependency */
+} /* Gamedock Dependency */
+
 dependencies {
   ....
     implementation 'androidx.multidex:multidex:x.x.x' /* Gamedock Dependency */
@@ -48,6 +58,29 @@ dependencies {
     implementation 'com.google.firebase:firebase-config:x.x.x' /* Gamedock Firebase */
   ....
 }  
+
+android {	
+  ....
+    dexOptions { /* Gamedock Dependency */
+      javaMaxHeapSize '4g' /* Gamedock Dependency */
+    } /* Gamedock Dependency */
+  ....
+
+    defaultConfig {
+  ....    
+      multiDexEnabled true /* Gamedock Dependency */
+  ....
+    }
+
+}
+~~~
+
+Remove followings from Assets/Plugins/Android/gradleTemplate.properties or just delete the 'gradleTemplate.properties' file if you are not managing it manually.
+~~~java
+....
+android.useAndroidX=true
+android.enableJetifier=true
+....
 ~~~
 
 Remove followings from Assets/Plugins/Android/AndroidManifest.xml
@@ -111,16 +144,18 @@ Configure iOS resolver settings from Assets > External Dependency Manager > iOS 
 
 #### Android dependency
 Go to Project Settings > Publishing Settings 
+* **Enable** *Custom Main Manifest* option to add AndroidManifest.xml 
 * **Enable** *Custom Main Gradle Template* option to add mainTemplate.gradle 
 * **Enable** *Custom Gradle Properties Template* option to add gradleTemplate.properties
+
+![github pages](_images/upgradeUnitySDK/upgradeUnitySDK8.png)
 
 Configure Android resolver settings from Assets > External Dependency Manager > Android Resolver > Settings 
 * **Enable** - Patch mainTemplate.gradle
 * **Enable** - Use Jetifier
-* **Disable** - Patch gradleTemplate.properties
+* **Enable** - Patch gradleTemplate.properties
 
 ![github pages](_images/upgradeUnitySDK/upgradeUnitySDK7.png)
-
 
 > #### Important! <br>
   **Resolve Android dependencies** from *Assets > External Dependency Manager > Android Resolver > **Force Resolve*** <br>
@@ -135,7 +170,7 @@ Check if all the values are properly set in the Inspector window. Bundle Id unit
 
 
 #### Check Gamedock SDK Configuration
-Go to the Azerion > Gamedock SDK > Configuration. Make sure the fields are configured correctly. If not, fix configuration and press the ‘Create default configuration files’ button. Browse all the tabs and Enable/Disable modules according to your preference.
+Go to the Azerion > Gamedock SDK > Configuration. Make sure the fields are configured correctly. Press the ‘Create default configuration files’ button. Browse all the tabs and Enable/Disable modules according to your preference.
 
 ![github pages](_images/upgradeUnitySDK/upgradeUnitySDK2.png)
 
