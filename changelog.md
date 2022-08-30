@@ -267,7 +267,7 @@
 
 * General UI/UX improvements.
 * Added multi file support for localization imports.
-* Added game event usage page for pulling in and comparing event usaged with each other for the past six months.
+* Added game event usage page for pulling in and comparing event usage with each other for the past six months.
 * Google authentication replaced with Azerion Connect.
 * Removed Mission config from `developer_files` download form.
 
