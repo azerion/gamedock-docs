@@ -2,7 +2,7 @@
 
 <!-- tabs:start -->
 
-#### ** SDK **
+#### ** Unity SDK **
 
 ## [5.1.0] - 04-04-2022
 
@@ -258,6 +258,19 @@
  * Unity (experimental): Fixed WebGL support for the SDK tracking and features (at the moment the following features are not supported: Splashscreens, Daily Bonus, Tiered Events, Ads).
  * Unity: Added toggle to easily override the AppController for iOS.
  * Unity: Exposed the Android Crashlytics/Fabric api key to the manifest. If you are using a different Fabric account then the old Spilgames one, make sure to update this key.
+
+#### ** Android Native SDK **
+
+## [5.0.0] - ??-??-????
+
+#### ** iOS Native SDK **
+
+## [5.0.0] - ??-??-????
+
+#### ** Cordova Plugin SDK **
+
+## [5.0.0] - ??-??-????
+
 
 #### ** Console **
 
