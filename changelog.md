@@ -4,6 +4,21 @@
 
 #### ** Unity SDK **
 
+## [5.2.0]
+
+### Changed
+
+Switched to UPM support, meaning you can now add the SDK via the Unity Package Manager
+ATT flow fixed. If user select 'Not Allow Tracking' privacy policy popup does not show
+Initialization bugs fixed.
+
+### Removed
+
+Removed the option to 'use' Tracking files (C#) that could be fetched from a bucket
+
+
+#### ** Unity SDK **
+
 ## [5.1.5] - 30-08-2022
 
 ### Added
