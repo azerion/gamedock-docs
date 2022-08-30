@@ -2,6 +2,14 @@
 
 <!-- tabs:start -->
 
+#### ** Android SDK **
+
+## [5.1.5] - 30-08-2022
+
+### Added
+- Android SDK Minor version changes warning removed
+- in Configuration help android google billing dependency removed
+
 #### ** Unity SDK **
 
 ## [5.1.0] - 04-04-2022
