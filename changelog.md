@@ -2,6 +2,30 @@
 
 <!-- tabs:start -->
 
+#### ** Android SDK **
+
+## [5.2.0]
+
+### Changed
+
+Age gate and privacy policy popups header image changed. Logo of Azerion is in middle
+Large heap allowed in manifest file. This is fixing the out of memory crash in older android devices
+Server Time parameter null check added to prevent possibility of crashes
+Updated Firebase packages to latest versions
+
+### Added
+
+Exported true parameter added to support android 12
+Clear Text network traffic was disabled
+
+#### ** iOS SDK **
+
+## [5.2.1]
+
+### Changed
+
+iOS SDK version problem fixed
+
 #### ** Unity SDK **
 
 ## [5.2.0]
