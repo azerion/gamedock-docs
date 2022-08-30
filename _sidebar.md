@@ -36,5 +36,6 @@
   * [![github pages](_images/sidebar/deepLink.svg)Deep Linking](deepLinking.md "Deep Linking")
 * [FAQs](faq.md "FAQs")
 * [Knowledge Base](knowledgeBase.md "Knowledge Base")
-* [Change Log](changelog.md "Change Log")
+* [Change Log (v5)](changelog.md "Change Log for SDK v5 and higher")
+* [Change Log (v4)](changelog.md "Change Log for SDK v4 and lower")
 
