@@ -2,6 +2,24 @@
 
 <!-- tabs:start -->
 
+#### **iOS SDK **
+
+## [5.2.5] - 12-08-2022
+
+## Added
+
+Resources files were path changed to pod directory. No need to copy resource files into main bundle
+
+#### ** Unity SDK **
+
+## [5.2.3] - 12-08-2022
+
+## Changed
+
+iOS hotfix SDK implemented. Copying resource files function removed
+fixing Android version problem fixed
+creating user config assset bug fixed
+
 #### ** Unity SDK **
 
 ## [5.2.2] - 25-07-2022
