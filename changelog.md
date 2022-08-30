@@ -2,6 +2,32 @@
 
 <!-- tabs:start -->
 
+#### ** Unity SDK **
+
+## [5.2.2] - 25-07-2022
+
+## Changed
+
+iOS SDK user data retrieving problem fixed
+Android post process duplicating some gradlea value problem fixed
+
+#### ** Android SDK **
+
+## [5.2.1]
+
+## Changed
+
+Version number was changed to equal with unity sdk hotfix version
+Firebase config sdk version increaded
+
+#### ** iOS SDK **
+
+## [5.2.2] - 25-07-2022
+
+## Changed
+
+iOS User Data retrieving problem fixed
+
 #### ** Android SDK **
 
 ## [5.2.0]
