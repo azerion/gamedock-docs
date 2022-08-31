@@ -10,24 +10,20 @@
 
 Resources files were path changed to pod directory. No need to copy resource files into main bundle
 
-#### ** Unity SDK **
-
-## [5.2.3] - 12-08-2022
-
-## Changed
-
-iOS hotfix SDK implemented. Copying resource files function removed
-fixing Android version problem fixed
-creating user config assset bug fixed
-
-#### ** Unity SDK **
-
 ## [5.2.2] - 25-07-2022
 
 ## Changed
 
-iOS SDK user data retrieving problem fixed
-Android post process duplicating some gradlea value problem fixed
+iOS User Data retrieving problem fixed
+
+
+## [5.2.1]
+
+### Changed
+
+iOS SDK version problem fixed
+
+
 
 #### ** Android SDK **
 
@@ -37,16 +33,6 @@ Android post process duplicating some gradlea value problem fixed
 
 Version number was changed to equal with unity sdk hotfix version
 Firebase config sdk version increaded
-
-#### ** iOS SDK **
-
-## [5.2.2] - 25-07-2022
-
-## Changed
-
-iOS User Data retrieving problem fixed
-
-#### ** Android SDK **
 
 ## [5.2.0]
 
@@ -62,15 +48,24 @@ Updated Firebase packages to latest versions
 Exported true parameter added to support android 12
 Clear Text network traffic was disabled
 
-#### ** iOS SDK **
 
-## [5.2.1]
-
-### Changed
-
-iOS SDK version problem fixed
 
 #### ** Unity SDK **
+
+## [5.2.3] - 12-08-2022
+
+## Changed
+
+iOS hotfix SDK implemented. Copying resource files function removed
+fixing Android version problem fixed
+creating user config assset bug fixed
+
+## [5.2.2] - 25-07-2022
+
+## Changed
+
+iOS SDK user data retrieving problem fixed
+Android post process duplicating some gradlea value problem fixed
 
 ## [5.2.0]
 
@@ -84,16 +79,11 @@ Initialization bugs fixed.
 
 Removed the option to 'use' Tracking files (C#) that could be fetched from a bucket
 
-
-#### ** Unity SDK **
-
 ## [5.1.5] - 30-08-2022
 
 ### Added
 - Android SDK Minor version changes warning removed
 - in Configuration help android google billing dependency removed
-
-#### ** Unity SDK **
 
 ## [5.1.0] - 04-04-2022
 
