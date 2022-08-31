@@ -233,6 +233,15 @@ Clear Text network traffic was disabled
 
 #### ** Console **
 
+
+### 01.04.2021 - 30.08.2022
+
+* General UI/UX improvements.
+* Added multi file support for localization imports.
+* Added game event usage page for pulling in and comparing event usage with each other for the past six months.
+* Google authentication replaced with Azerion Connect.
+* Removed Mission config from `developer_files` download form.
+
 ### 01.03.2021 - 31.03.2021
 
 * Added filtering on tags for localization texts.
