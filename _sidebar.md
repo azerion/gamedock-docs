@@ -36,8 +36,8 @@
   * [![github pages](_images/sidebar/deepLink.svg)Deep Linking](deepLinking.md "Deep Linking")
 * [FAQs](faq.md "FAQs")
 * [Knowledge Base](knowledgeBase.md "Knowledge Base")
-* [Changelogs](reporting.md "All Changes")
-  * [![github pages](_images/sidebar/sdkFeatures.svg)SDK v5](changelog.md "SDK v5")
+* [Changelogs](changelog.md "All Changes")
+  * [![github pages](_images/sidebar/sdkFeatures.svg)SDK v5](changelog-new.md "SDK v5")
   * [![github pages](_images/sidebar/handlingErrors.svg)SDK v4 and lower](changelog-old.md "SDK v4")
   * [![github pages](_images/sidebar/eventTracking.svg)Console](changelog-console.md "Console changes")
 
