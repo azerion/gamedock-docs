@@ -7,20 +7,24 @@
 
 #### ** Unity SDK **
 
+## [5.2.4] - 13-10-2022
+### Changed
+- [Android] Target SDK was upgraded to 31
+- [Android] Firebase dependencies were upgraded to latest versions
+- [Android] play-services-basement dependency updated
+- [Android] Latest Gamedock android sdk dependency updated
+
+
 ## [5.2.3] - 12-08-2022
-
 ## Changed
-
-iOS hotfix SDK implemented. Copying resource files function removed
-fixing Android version problem fixed
-creating user config assset bug fixed
+- [iOS] hotfix SDK implemented. Copying resource files function removed
+- [Android] fixing  version problem fixed
+- [Unity] creating user config assset bug fixed
 
 ## [5.2.2] - 25-07-2022
-
 ## Changed
-
-iOS SDK user data retrieving problem fixed
-Android post process duplicating some gradlea value problem fixed
+- [iOS] SDK user data retrieving problem fixed
+- [Android] post process duplicating some gradlea value problem fixed
 
 ## [5.2.1]
 ### Changed
@@ -30,14 +34,12 @@ Android post process duplicating some gradlea value problem fixed
 ## [5.2.0]
 
 ### Changed
-
-Switched to UPM support, meaning you can now add the SDK via the Unity Package Manager
-ATT flow fixed. If user select 'Not Allow Tracking' privacy policy popup does not show
-Initialization bugs fixed.
+- Switched to UPM support, meaning you can now add the SDK via the Unity Package Manager
+- ATT flow fixed. If user select 'Not Allow Tracking' privacy policy popup does not show
+- Initialization bugs fixed.
 
 ### Removed
-
-Removed the option to 'use' Tracking files (C#) that could be fetched from a bucket
+- Removed the option to 'use' Tracking files (C#) that could be fetched from a bucket
 
 ## [5.1.5] - 30-08-2022
 
@@ -100,6 +102,13 @@ Removed the option to 'use' Tracking files (C#) that could be fetched from a buc
 
 #### **Cordova SDK **
 
+## [5.2.1] - 13-10-2022
+### Changed
+- [Android] Target SDK was upgraded to 31
+- [Android] Firebase dependencies were upgraded to latest versions
+- [Android] play-services-basement dependency updated
+- [Android] Latest Gamedock android sdk dependency updated
+
 ## [5.2.0]
 ### Changed
 - [Android / iOS] Upgraded the native Gamedock SDK's to [5.2.x] hotfix branches
@@ -128,7 +137,6 @@ Removed the option to 'use' Tracking files (C#) that could be fetched from a buc
 ## [5.2.5] - 12-08-2022
 
 ## Added
-
 Resources files were path changed to pod directory. No need to copy resource files into main bundle
 
 ## [5.2.2] - 25-07-2022
@@ -178,32 +186,32 @@ iOS SDK version problem fixed
  - Text bug in GDPR / Privacy Policy screen
 
 
-
 #### ** Android Native SDK **
 
+## [5.2.2] - 13-10-2022
+### Changed
+- Target SDK was upgraded to 31
+- Firebase dependencies were upgraded to latest versions
+- play-services-basement dependency added
+- Target SDK upgraded encryption sdk integrated
+
 ## [5.2.1]
-
-## Changed
-
-Version number was changed to equal with unity sdk hotfix version
-Firebase config sdk version increaded
+### Changed
+- Version number was changed to equal with unity sdk hotfix version
+- Firebase config sdk version increaded
 
 ## [5.2.0]
-
 ### Changed
-
-Age gate and privacy policy popups header image changed. Logo of Azerion is in middle
-Large heap allowed in manifest file. This is fixing the out of memory crash in older android devices
-Server Time parameter null check added to prevent possibility of crashes
-Updated Firebase packages to latest versions
+- Age gate and privacy policy popups header image changed. Logo of Azerion is in middle
+- Large heap allowed in manifest file. This is fixing the out of memory crash in older android devices
+- Server Time parameter null check added to prevent possibility of crashes
+- Updated Firebase packages to latest versions
 
 ### Added
-
-Exported true parameter added to support android 12
-Clear Text network traffic was disabled
+- Exported true parameter added to support android 12
+- Clear Text network traffic was disabled
 
 ## [5.1.3] - 13-05-2022
-
 ### Added
 - Add OnAdTrigger event that will allow a game developer to show interstitials after a gamedock event
 - Added exported:true to net.openid.appauth.RedirectUriReceiverActivity to comply with Android 12 / Target 31
