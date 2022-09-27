@@ -7,6 +7,21 @@
 
 #### ** Unity SDK **
 
+## [5.3.0] - 23-09-2022
+### Changed
+- Removed Gamedock Configuration from Editor menu and added new Settings to the menu.
+- Removed GamedockSDK game object from the scene.
+- All the Gamedock configurations/Settings are now managed via a single ScriptableObject named "GamedockSettings" (located inside Assets/Resources dir).
+- Removed "Initialize On Awake" and "Dont Destroy On Load" option. 
+- GamedockSDK gameobject is now created runtime when initialized from the script and set not to destroy on load.
+- New "GamedockSettings" is platform specific, options are available based on current platform.
+- "ATT Accepted" option is moved under Unity Editor Settings.
+- Removed Ads, Daily Bonus, Token System settings
+- [Android] Removed option to set "Custom Package Name".
+- [Android] Removed defaultGameConfigAndroid, Now using only defaultGameConfig to store config data of all platform.
+- [iOS] Removed option to set "Custom Bundle Id".
+- [iOS] Removed GamedockSDKiOSConfig and moved necessary config options to new "GamedockSettings". 
+
 ## [5.2.4] - 13-10-2022
 ### Changed
 - [Android] Target SDK was upgraded to 31
