@@ -17,6 +17,7 @@
 - New "GamedockSettings" is platform specific, options are available based on current platform.
 - "ATT Accepted" option is moved under Unity Editor Settings.
 - Removed Ads, Daily Bonus, Token System settings
+- Get User Consent Status
 - [Android] Removed option to set "Custom Package Name".
 - [Android] Removed defaultGameConfigAndroid, Now using only defaultGameConfig to store config data of all platform.
 - [iOS] Removed option to set "Custom Bundle Id".
