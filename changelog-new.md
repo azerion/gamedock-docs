@@ -6,7 +6,7 @@
 <!-- tabs:start -->
 #### ** iOS SDK **
 
-[5.2.6] - 28-09-2022
+## [5.2.6] - 28-09-2022
 
 ##Fixed
 
@@ -14,7 +14,7 @@ Native gdpr flow fixed. If user not allow ATT, privacy pocy popup does not show
 
 #### ** iOS SDK **
 
-[5.2.5] - 12-08-2022
+## [5.2.5] - 12-08-2022
 
 ##Added
 
@@ -22,7 +22,7 @@ Resources files were path changed to pod directory. No need to copy resource fil
 
 #### ** Unity SDK **
 
-[5.2.5] - 13-09-2022
+## [5.2.5] - 13-09-2022
 
 ## Changed
 
@@ -38,8 +38,17 @@ iOS hotfix SDK implemented. Copying resource files function removed
 fixing Android version problem fixed
 creating user config assset bug fixed
 
+#### ** Cordova SDK **
+
+## [5.2.2] - 22-09-2022
+
+## Changed
+
+Google play-services dependencies were upgraded to latest versions
+
 #### ** Android SDK **
-[5.2.3] - 22-09-2022
+
+## [5.2.3] - 22-09-2022
 
 ## Changed
 
