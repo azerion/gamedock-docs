@@ -4,6 +4,29 @@
 > Starting Unity SDK version 5.2.0; the SDK will be available via the Unity package manager, please read the [Upgrade Guide](upgradeUnitySDK.md)
 
 <!-- tabs:start -->
+#### ** iOS SDK **
+
+[5.2.6] - 28-09-2022
+
+##Fixed
+
+Native gdpr flow fixed. If user not allow ATT, privacy pocy popup does not show
+
+#### ** iOS SDK **
+
+[5.2.5] - 12-08-2022
+
+##Added
+
+Resources files were path changed to pod directory. No need to copy resource files into main bundle
+
+#### ** Unity SDK **
+
+[5.2.5] - 13-09-2022
+
+## Changed
+
+Google play-services dependencies were upgraded to latest versions
 
 #### ** Unity SDK **
 
@@ -14,6 +37,13 @@
 iOS hotfix SDK implemented. Copying resource files function removed
 fixing Android version problem fixed
 creating user config assset bug fixed
+
+#### ** Android SDK **
+[5.2.3] - 22-09-2022
+
+## Changed
+
+google play-services dependencies were upgraded to latest versions
 
 ## [5.2.2] - 25-07-2022
 
