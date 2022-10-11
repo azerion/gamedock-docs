@@ -8,7 +8,7 @@
 
 ## [5.2.6] - 28-09-2022
 
-##Fixed
+## Fixed
 
 Native gdpr flow fixed. If user not allow ATT, privacy pocy popup does not show
 
@@ -16,7 +16,7 @@ Native gdpr flow fixed. If user not allow ATT, privacy pocy popup does not show
 
 ## [5.2.5] - 12-08-2022
 
-##Added
+## Added
 
 Resources files were path changed to pod directory. No need to copy resource files into main bundle
 
