@@ -179,20 +179,24 @@ Shop Shop = Gamedock.Instance.GameData.Shop;
 Helper methods for retrieving specific entries in the Game Data lists (ID represents the id generated in the Console, NAME represents the name given by you to the specific entity when it was created).
 ~~~csharp
 //Getting a Currency 
-Currency currency = Gamedock.Instance.GameData.GetCurrency(ID);
 Currency currency = Gamedock.Instance.GameData.GetCurrency(NAME);
+Currency currency = Gamedock.Instance.GameData.GetCurrency(ID);
+
 
 //Getting an Item 
-Item item = Gamedock.Instance.GameData.GetItem(ID);
 Item item = Gamedock.Instance.GameData.GetItem(NAME);
+Item item = Gamedock.Instance.GameData.GetItem(ID);
+
 
 //Getting a Gacha 
-Item gacha = Gamedock.Instance.GameData.GetGacha(ID);
 Item gacha = Gamedock.Instance.GameData.GetGacha(NAME);
+Item gacha = Gamedock.Instance.GameData.GetGacha(ID);
+
 
 //Getting a Bundle 
-Bundle bundle = Gamedock.Instance.GameData.GetBundle(ID);
 Bundle bundle = Gamedock.Instance.GameData.GetBundle(NAME);
+Bundle bundle = Gamedock.Instance.GameData.GetBundle(ID);
+
 ~~~
 
 Retrieve the Wallet or the Inventory object containing all the information that the user has.
@@ -258,12 +262,14 @@ Gamedock.Instance.PlayerData.Inventory.RemoveUniqueItemFromInventory(uniqueItem,
 Helper methods for retrieving specific entries in the Game Data lists (ID represents the id generated in the Console, NAME represents the name given by you to the specific entity when it was created).
 ~~~csharp
 //Getting a PlayerCurrency
-PlayerCurrency currency = Gamedock.Instance.PlayerData.GetCurrency(ID);
 PlayerCurrency currency = Gamedock.Instance.PlayerData.GetCurrency(NAME);
+PlayerCurrency currency = Gamedock.Instance.PlayerData.GetCurrency(ID);
+
 
 //Getting a PlayerItem
-PlayerItem item = Gamedock.Instance.PlayerData.GetItem(ID);
 PlayerItem item = Gamedock.Instance.PlayerData.GetItem(NAME);
+PlayerItem item = Gamedock.Instance.PlayerData.GetItem(ID);
+
 
 //Getting a UniquePlayerItem
 UniquePlayerItem uniqueItem = Gamedock.Instance.PlayerData.Inventory.GetUniqueItem(uniqueId);
@@ -272,8 +278,9 @@ UniquePlayerItem uniqueItem = Gamedock.Instance.PlayerData.Inventory.GetUniqueIt
 List<PlayerItem> playerOwnedGachas = Gamedock.Instance.PlayerData.GetGachas();
 
 //Check if an Item is present in the Player Inventory
-bool check = Gamedock.Instance.PlayerData.InventoryHasItem(ID);
 bool check = Gamedock.Instance.PlayerData.InventoryHasItem(NAME);
+bool check = Gamedock.Instance.PlayerData.InventoryHasItem(ID);
+
 
 //Check if an Item is present in the Player Inventory
 bool hasUniqueItem = Gamedock.Instance.PlayerData.InventoryHasUniquePlayerItem(uniqueId);
@@ -282,12 +289,14 @@ bool hasUniqueItem = Gamedock.Instance.PlayerData.InventoryHasUniquePlayerItem(u
 Helper methods for retrieving the current amount/balance the user has for PlayerCurrencies and PlayerItems.
 ~~~csharp
 //Getting the Current Balance
-int balance = Gamedock.Instance.PlayerData.GetCurrencyBalance(ID);
 int balance = Gamedock.Instance.PlayerData.GetCurrencyBalance(NAME);
+int balance = Gamedock.Instance.PlayerData.GetCurrencyBalance(ID);
+
 
 //Getting the Item Amount
-int amount = Gamedock.Instance.PlayerData.GetItemAmount(ID);
 int amount = Gamedock.Instance.PlayerData.GetItemAmount(NAME);
+int amount = Gamedock.Instance.PlayerData.GetItemAmount(ID);
+
 ~~~
 
 By default each operation done on the Wallet or Inventory sends their own events to the backend. In some cases you might want to bundle multiple operations before sending them to the backend. You can do so using the methods below.
@@ -386,17 +395,19 @@ var Shop:Shop = Gamedock.GetInstance().GameData.Shop;
 // Each image entry contains an URL to download the sticker image
 
 // Getting a Currency, Item, Bundle or Gacha by ID or NAME
-Gamedock.GetInstance().GameData.GetCurrency(ID);
+
 Gamedock.GetInstance().GameData.GetCurrency(NAME);
+Gamedock.GetInstance().GameData.GetCurrency(ID);
 
-Gamedock.GetInstance().GameData.GetItem(ID);
 Gamedock.GetInstance().GameData.GetItem(NAME);
+Gamedock.GetInstance().GameData.GetItem(ID);
 
-Gamedock.GetInstance().GameData.GetBundle(ID);
 Gamedock.GetInstance().GameData.GetBundle(NAME);
+Gamedock.GetInstance().GameData.GetBundle(ID);
 
-Gamedock.GetInstance().GameData.GetGacha(ID);
 Gamedock.GetInstance().GameData.GetGacha(NAME);
+Gamedock.GetInstance().GameData.GetGacha(ID);
+
 
 // Retrieve item properties
 var itemProperties:Object = Gamedock.GetInstance().GameData.GetItem(49).Properties;
@@ -405,11 +416,20 @@ var itemProperties:Object = Gamedock.GetInstance().GameData.GetItem(49).Properti
 var Wallet:Wallet = Gamedock.GetInstance().PlayerData.Wallet;
 var Inventory:Inventory = Gamedock.GetInstance().PlayerData.Inventory;
 
+// Getting the Current Balance for a given Currency NAME
+Gamedock.GetInstance().PlayerData.GetCurrencyBalance(NAME);
+
 // Getting the Current Balance for a given Currency ID
 Gamedock.GetInstance().PlayerData.GetCurrencyBalance(ID);
 
+// Getting the Item Amount for a given Item NAME
+Gamedock.GetInstance().PlayerData.GetItemAmount(NAME);
+
 // Getting the Item Amount for a given Item ID
 Gamedock.GetInstance().PlayerData.GetItemAmount(ID);
+
+// Check if an Item is present in the Player Inventory
+Gamedock.GetInstance().PlayerData.InventoryHasItem(Item NAME);
 
 // Check if an Item is present in the Player Inventory
 Gamedock.GetInstance().PlayerData.InventoryHasItem(Item ID);
