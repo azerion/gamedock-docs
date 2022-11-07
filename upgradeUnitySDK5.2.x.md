@@ -140,7 +140,7 @@ For dependency resolution use **External Dependency Manager for Unity (EDM4U)**
 Configure iOS resolver settings from Assets > External Dependency Manager > iOS Resolver > Settings 
 * Check the *Enable Swift Framework Support Workaround* 
 
-![github pages](_images/upgradeUnitySDK/upgradeUnitySDK6.png)
+![github pages](_images/upgradeUnitySDK5.2.x/upgradeUnitySDK6.png)
 
 #### Android dependency
 Go to Project Settings > Publishing Settings 
@@ -148,14 +148,14 @@ Go to Project Settings > Publishing Settings
 * **Enable** *Custom Main Gradle Template* option to add mainTemplate.gradle 
 * **Enable** *Custom Gradle Properties Template* option to add gradleTemplate.properties
 
-![github pages](_images/upgradeUnitySDK/upgradeUnitySDK8.png)
+![github pages](_images/upgradeUnitySDK5.2.x/upgradeUnitySDK8.png)
 
 Configure Android resolver settings from Assets > External Dependency Manager > Android Resolver > Settings 
 * **Enable** - Patch mainTemplate.gradle
 * **Enable** - Use Jetifier
 * **Enable** - Patch gradleTemplate.properties
 
-![github pages](_images/upgradeUnitySDK/upgradeUnitySDK7.png)
+![github pages](_images/upgradeUnitySDK5.2.x/upgradeUnitySDK7.png)
 
 > #### Important! <br>
   **Resolve Android dependencies** from *Assets > External Dependency Manager > Android Resolver > **Force Resolve*** <br>
@@ -166,16 +166,16 @@ Configure Android resolver settings from Assets > External Dependency Manager > 
 #### Check GamedockSDK gameobject
 Check if all the values are properly set in the Inspector window. Bundle Id unity field might be empty after SDK update.
 
-![github pages](_images/upgradeUnitySDK/upgradeUnitySDK1.png)
+![github pages](_images/upgradeUnitySDK5.2.x/upgradeUnitySDK1.png)
 
 
 #### Check Gamedock SDK Configuration
 Go to the Azerion > Gamedock SDK > Configuration. Make sure the fields are configured correctly. Press the ‘Create default configuration files’ button. Browse all the tabs and Enable/Disable modules according to your preference.
 
-![github pages](_images/upgradeUnitySDK/upgradeUnitySDK2.png)
+![github pages](_images/upgradeUnitySDK5.2.x/upgradeUnitySDK2.png)
 
-![github pages](_images/upgradeUnitySDK/upgradeUnitySDK3.png)
+![github pages](_images/upgradeUnitySDK5.2.x/upgradeUnitySDK3.png)
 
-![github pages](_images/upgradeUnitySDK/upgradeUnitySDK4.png)
+![github pages](_images/upgradeUnitySDK5.2.x/upgradeUnitySDK4.png)
 
-![github pages](_images/upgradeUnitySDK/upgradeUnitySDK5.png)
+![github pages](_images/upgradeUnitySDK5.2.x/upgradeUnitySDK5.png)
