@@ -7,6 +7,16 @@
 
 #### ** Unity SDK **
 
+## [5.3.2] - 10-11-2022
+
+### Fixed
+Gamedock Setting Android menu fixed
+
+## [5.3.1] - 04-11-2022
+
+### Added
+getConsentStatus added for retrieving User Consent status added for Android
+
 ## [5.3.0] - 23-09-2022
 ### Changed
 - Removed Gamedock Configuration from Editor menu and added new Settings to the menu.
@@ -118,6 +128,17 @@
 
 #### **Cordova SDK **
 
+## [5.3.1] - 04-11-2022
+
+### Fixed
+new android dependency added
+
+## [5.3.0] - 04-11-2022
+
+### Added
+5.3.0 iOS And Android dependencies added
+getConsentStatus function added
+
 ## [5.2.1] - 13-10-2022
 ### Changed
 - [Android] Target SDK was upgraded to 31
@@ -149,6 +170,19 @@
 - Removed all the ad related content
 
 #### **iOS Native SDK **
+
+## [5.3.0] - 04-11-2022
+
+## Changed
+Encryption algorithm changed
+
+## Removed
+Tiered Events
+
+## [5.2.7] - 30-09-2022
+
+## Added
+getConsentStatus added for retrieving User Consent status
 
 ## [5.2.5] - 12-08-2022
 
@@ -204,7 +238,26 @@ iOS SDK version problem fixed
 
 #### ** Android Native SDK **
 
-## [5.2.2] - 13-10-2022
+## [5.3.1] - 04-11-2022
+
+### Added
+getConsentStatus added for retrieving User Consent status
+
+
+## [5.3.0] - 04-11-2022
+
+### Changed
+Encryption algorithm changed
+
+### Removed
+Tiered Events
+
+## [5.2.3] - 22-09-2022
+
+### Changed
+google play-services dependencies were upgraded to latest versions
+
+## [5.2.2] - 13-09-2022
 ### Changed
 - Target SDK was upgraded to 31
 - Firebase dependencies were upgraded to latest versions
