@@ -7,8 +7,24 @@
 
 #### ** Unity SDK **
 
-## [5.3.2] - 10-11-2022
+## [5.3.6] - 20-11-2022
+### Fixed
+- iOS Sdk Version upgraded
 
+## [5.3.5] - 16-11-2022
+### Fixed
+- iOS Sdk Feature name fix
+
+## [5.3.4] - 11-11-2022
+### Fixed
+- Android Sdk Minor version changes warning fixed
+- Auto Translation Text Mesh Pro fixes
+
+## [5.3.3] - 11-11-2022
+### Fixed
+- Android Sdk Dependency version fixed
+
+## [5.3.2] - 10-11-2022
 ### Fixed
 Gamedock Setting Android menu fixed
 
@@ -128,6 +144,10 @@ getConsentStatus added for retrieving User Consent status added for Android
 
 #### **Cordova SDK **
 
+## [5.3.2] - 20-11-2022
+### Changed
+- iOS SDK dependency version upgraded
+
 ## [5.3.1] - 04-11-2022
 
 ### Fixed
@@ -170,6 +190,14 @@ getConsentStatus function added
 - Removed all the ad related content
 
 #### **iOS Native SDK **
+
+## [5.3.2] - 20-11-2022
+### Fixed
+- GetConsent bug fixed
+
+## [5.3.1] - 15-11-2022
+### Changed
+- MoreApps feature name fixed
 
 ## [5.3.0] - 04-11-2022
 
