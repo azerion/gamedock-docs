@@ -7,6 +7,12 @@
 
 #### ** Unity SDK **
 
+## [5.3.7] - 29-11-2022
+### Fixed
+- Android Sdk Azerion logo ratio fixed
+- WebRequest disposed to fix memory leaks
+- String.xml removed and checking removed
+
 ## [5.3.6] - 20-11-2022
 ### Fixed
 - iOS Sdk Version upgraded
@@ -265,6 +271,10 @@ iOS SDK version problem fixed
 
 
 #### ** Android Native SDK **
+
+## [5.3.2] - 29-11-2022
+### Changed
+- azerion logo ratio changed on privavcypolicy and age gate pages
 
 ## [5.3.1] - 04-11-2022
 
