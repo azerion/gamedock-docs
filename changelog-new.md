@@ -7,6 +7,12 @@
 
 #### ** Unity SDK **
 
+## [5.3.8] - 02-12-2022
+### Fixed
+- WebRequest disposed to fix memory leaks when exporting
+- Localization fixes
+- GUID conflicts fixed
+
 ## [5.3.7] - 29-11-2022
 ### Fixed
 - Android Sdk Azerion logo ratio fixed
@@ -149,6 +155,10 @@ getConsentStatus added for retrieving User Consent status added for Android
 
 
 #### **Cordova SDK **
+
+## [5.3.3] - 02-12-2022
+### Changed
+- Android SDK dependency version upgraded
 
 ## [5.3.2] - 20-11-2022
 ### Changed
