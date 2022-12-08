@@ -18,19 +18,28 @@ Update Packages/manifest.json to modify scope registries and sdk version:
        "com.azerion",
        "com.azerion.gamedock-sdk-unity"
      ]
-   }
+    },
+    {
+      "name": "package.openupm.com",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.google.external-dependency-manager"
+      ]
+    }
    .......
  ],
  "dependencies": {
    .......
    "com.azerion.gamedock-sdk-unity": "5.3.x",
+   "com.google.external-dependency-manager": "1.2.172",
    .......
  }
 }
 ~~~
 
 > [!NOTE]
-> Use the latest Gamedock SDK version available here https://www.npmjs.com/package/com.azerion.gamedock-sdk-unity.
+> Use the latest Gamedock SDK version available here https://www.npmjs.com/package/com.azerion.gamedock-sdk-unity. 
+External Dependency Manager is required by the Gamedock SDK.
 
 ### Remove existing Gamedock assets
 
@@ -78,7 +87,7 @@ The Gamedock SDK is now ready to use!
 
 ### Using GamedockSDK
 
-Use following line to initialize/Start GamedockSDK
+Use following line to initialize/Start GamedockSDK:
 ~~~C#
 Gamedock.MonoInstance.Initialize();
 ~~~
@@ -92,16 +101,16 @@ Gamedock.Instance.InitializationCallbacks.OnInitializationCompleted -= OnInitial
 Gamedock.Instance.InitializationCallbacks.OnInitializationCompleted += OnInitializationCompleted;
 ~~~
 > [!NOTE]
-> Keep in mind that this does not signify that all the SDK modules are ready yet, and for individual functionalities you should still look at each features’ callbacks. Subscription must be done before GamedockSDK initialization. It is recommended to subscribe inside **OnEnable()** method and unsubscribe inside **OnDisable()**
+> Keep in mind that this does not signify that all the SDK modules are ready yet, and for individual functionalities you should still look at each features’ callbacks. Subscription must be done before GamedockSDK initialization. It is recommended to subscribe inside **OnEnable()** method and unsubscribe inside **OnDisable()**.
 
 ### Recommendations for Android Platform
 
-> [!NOTE]
-> It is recommended not to change any Gamedock SDK related settings manually in **mainTemplate.gradle** or main **AndroidManifest.xml** files. Gamedock SDK related settings in these two files are automatically managed by the **External Dependency Manager** and **Gamedock Settings**. If required, developers can manage these files manually using the templates provided with the package *(Located in Packages/Gamedock SDK - Unity/Plugins/Android/)*. **Update Manifest** button located in the **Gamedock Settings** can be used anytime to automaticaly configure main AndroidManifest based on Gamedock SDK requierments.
+It is recommended not to change any Gamedock SDK related settings manually in **mainTemplate.gradle** or main **AndroidManifest.xml** files. Gamedock SDK related settings in these two files are automatically managed by the **External Dependency Manager** and **Gamedock Settings**. If required, developers can manage these files manually using the templates provided with the package *(Located in Packages/Gamedock SDK - Unity/Plugins/Android/)*. **Update Manifest** button located in the **Gamedock Settings** can be used anytime to automaticaly configure main AndroidManifest based on Gamedock SDK requierments.
 
 ![github pages](_images/upgradeUnitySDK5.3.x/upgradeUnitySDK5.3.x.5.png)
 
-> [!NOTE]
-> If developers make any change in the **mainTemplate.gradle** or **AndroidManifest.xml** when the Gamedock Settings panel is open in the Inspector, it is recommended to **Refresh** the Gamedock settings panel in the inspector to make Gamedock aware of the changes.
+If developers make any change in the **mainTemplate.gradle** or **AndroidManifest.xml** when the Gamedock Settings panel is open in the Inspector, it is recommended to **Refresh** the Gamedock settings panel in the inspector to make Gamedock aware of the changes. Gamedock will automatically try to fix the lines managed by Gamedock to prevent any potential issue. 
 
 ![github pages](_images/upgradeUnitySDK5.3.x/upgradeUnitySDK5.3.x.6.png)
+
+It is highly recommended not to change anything manually in the **mainTemplate.gradle** that is from GamedockDependencies.xml. However, If you want to manually manage the gradle file, remove the lines that has **GamedockDependencies.xml** in it and disable "Auto-Resolution" and "Resolution On Build" from Android Resolver Settings *( Assets > External Dependency Manager > Android Resolver > Settings )*.
