@@ -7,6 +7,44 @@
 
 #### ** Unity SDK **
 
+## [5.3.8] - 02-12-2022
+### Fixed
+- WebRequest disposed to fix memory leaks when exporting
+- Localization fixes
+- GUID conflicts fixed
+
+## [5.3.7] - 29-11-2022
+### Fixed
+- Android Sdk Azerion logo ratio fixed
+- WebRequest disposed to fix memory leaks
+- String.xml removed and checking removed
+
+## [5.3.6] - 20-11-2022
+### Fixed
+- iOS Sdk Version upgraded
+
+## [5.3.5] - 16-11-2022
+### Fixed
+- iOS Sdk Feature name fix
+
+## [5.3.4] - 11-11-2022
+### Fixed
+- Android Sdk Minor version changes warning fixed
+- Auto Translation Text Mesh Pro fixes
+
+## [5.3.3] - 11-11-2022
+### Fixed
+- Android Sdk Dependency version fixed
+
+## [5.3.2] - 10-11-2022
+### Fixed
+Gamedock Setting Android menu fixed
+
+## [5.3.1] - 04-11-2022
+
+### Added
+getConsentStatus added for retrieving User Consent status added for Android
+
 ## [5.3.0] - 23-09-2022
 ### Changed
 - Removed Gamedock Configuration from Editor menu and added new Settings to the menu.
@@ -118,6 +156,25 @@
 
 #### **Cordova SDK **
 
+## [5.3.3] - 02-12-2022
+### Changed
+- Android SDK dependency version upgraded
+
+## [5.3.2] - 20-11-2022
+### Changed
+- iOS SDK dependency version upgraded
+
+## [5.3.1] - 04-11-2022
+
+### Fixed
+new android dependency added
+
+## [5.3.0] - 04-11-2022
+
+### Added
+5.3.0 iOS And Android dependencies added
+getConsentStatus function added
+
 ## [5.2.1] - 13-10-2022
 ### Changed
 - [Android] Target SDK was upgraded to 31
@@ -149,6 +206,27 @@
 - Removed all the ad related content
 
 #### **iOS Native SDK **
+
+## [5.3.2] - 20-11-2022
+### Fixed
+- GetConsent bug fixed
+
+## [5.3.1] - 15-11-2022
+### Changed
+- MoreApps feature name fixed
+
+## [5.3.0] - 04-11-2022
+
+## Changed
+Encryption algorithm changed
+
+## Removed
+Tiered Events
+
+## [5.2.7] - 30-09-2022
+
+## Added
+getConsentStatus added for retrieving User Consent status
 
 ## [5.2.5] - 12-08-2022
 
@@ -204,7 +282,30 @@ iOS SDK version problem fixed
 
 #### ** Android Native SDK **
 
-## [5.2.2] - 13-10-2022
+## [5.3.2] - 29-11-2022
+### Changed
+- azerion logo ratio changed on privavcypolicy and age gate pages
+
+## [5.3.1] - 04-11-2022
+
+### Added
+getConsentStatus added for retrieving User Consent status
+
+
+## [5.3.0] - 04-11-2022
+
+### Changed
+Encryption algorithm changed
+
+### Removed
+Tiered Events
+
+## [5.2.3] - 22-09-2022
+
+### Changed
+google play-services dependencies were upgraded to latest versions
+
+## [5.2.2] - 13-09-2022
 ### Changed
 - Target SDK was upgraded to 31
 - Firebase dependencies were upgraded to latest versions
