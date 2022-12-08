@@ -7,6 +7,11 @@
 
 #### ** Unity SDK **
 
+## [5.3.11] - 07-12-2022
+### Fixed
+- Registering to ExceptionHandlers only when Firebase is enable in Gamedock Settings
+- Disables all Gamedock Firebase dependencies from the mainTemplate.gradle when any of the dependency is disabled.
+
 ## [5.3.8] - 02-12-2022
 ### Fixed
 - WebRequest disposed to fix memory leaks when exporting

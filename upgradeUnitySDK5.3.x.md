@@ -109,6 +109,8 @@ It is recommended not to change any Gamedock SDK related settings manually in **
 
 ![github pages](_images/upgradeUnitySDK5.3.x/upgradeUnitySDK5.3.x.5.png)
 
-If developers make any change in the **mainTemplate.gradle** or **AndroidManifest.xml** when the Gamedock Settings panel is open in the Inspector, it is recommended to **Refresh** the Gamedock settings panel in the inspector to make Gamedock aware of the changes. Gamedock will try to fix these files automatically to prevent any potential issue.
+If developers make any change in the **mainTemplate.gradle** or **AndroidManifest.xml** when the Gamedock Settings panel is open in the Inspector, it is recommended to **Refresh** the Gamedock settings panel in the inspector to make Gamedock aware of the changes. Gamedock will automatically try to fix the lines managed by Gamedock to prevent any potential issue. 
 
 ![github pages](_images/upgradeUnitySDK5.3.x/upgradeUnitySDK5.3.x.6.png)
+
+It is highly recommended not to change anything manually in the **mainTemplate.gradle** that is from GamedockDependencies.xml. However, If you want to manually manage the gradle file, remove the lines that has **GamedockDependencies.xml** in it and disable "Auto-Resolution" and "Resolution On Build" from Android Resolver Settings *( Assets > External Dependency Manager > Android Resolver > Settings )*.
