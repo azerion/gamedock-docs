@@ -212,6 +212,10 @@ getConsentStatus function added
 
 #### **iOS Native SDK **
 
+## [5.3.3] - 14-12-2022
+### Fixed
+- GDPR Flow ATT not allowed case privacy policy page showed second boot problem fixed
+
 ## [5.3.2] - 20-11-2022
 ### Fixed
 - GetConsent bug fixed
