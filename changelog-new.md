@@ -161,6 +161,11 @@ getConsentStatus added for retrieving User Consent status added for Android
 
 #### **Cordova SDK **
 
+## [5.3.4] - 15-12-2022
+### Fixed
+- GDPR Flow ATT not allowed case privacy policy page showed second boot problem fixed
+
+
 ## [5.3.3] - 02-12-2022
 ### Changed
 - Android SDK dependency version upgraded
