@@ -7,6 +7,13 @@
 
 #### ** Unity SDK **
 
+## [5.3.12] - 28-12-2022
+### Changed
+- iOS Firebase versions upgraded
+- iOS Gamedock versions upgraded
+### Removed
+- iOS Firebase enabling checkbox removed
+
 ## [5.3.11] - 07-12-2022
 ### Fixed
 - Registering to ExceptionHandlers only when Firebase is enable in Gamedock Settings
@@ -215,7 +222,13 @@ getConsentStatus function added
 ### Removed
 - Removed all the ad related content
 
+
+
 #### **iOS Native SDK **
+
+## [5.3.4] - 28-12-2022
+### Changed
+- iOS Firebase versions upgraded
 
 ## [5.3.3] - 14-12-2022
 ### Fixed
