@@ -9,7 +9,7 @@
 
 ## [5.3.12] - 28-12-2022
 ### Changed
-- iOS Firebase sdks versions upgraded (from 8.15.0 to 10.3.0)
+- iOS Firebase sdks (FirebaseAnalytics,FirebaseCrashlytics,FirebaseDynamicLinks,FirebaseInstallations,FirebaseMessaging,FirebaseRemoteConfig)versions upgraded (from 8.15.0 to 10.3.0)
 - iOS Gamedock version upgraded (from 5.3.3 to 5.3.4)
 ### Removed
 - iOS Firebase enable/disable checkbox removed on unity ios setting menu
@@ -228,7 +228,7 @@ getConsentStatus function added
 
 ## [5.3.4] - 28-12-2022
 ### Changed
-- iOS Firebase sdks versions upgraded (from 8.15.0 to 10.3.0)
+- iOS Firebase sdks (FirebaseAnalytics,FirebaseCrashlytics,FirebaseDynamicLinks,FirebaseInstallations,FirebaseMessaging,FirebaseRemoteConfig) versions upgraded (from 8.15.0 to 10.3.0)
 
 ## [5.3.3] - 14-12-2022
 ### Fixed
