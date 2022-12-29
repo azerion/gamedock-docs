@@ -9,10 +9,10 @@
 
 ## [5.3.12] - 28-12-2022
 ### Changed
-- iOS Firebase versions upgraded
-- iOS Gamedock versions upgraded
+- iOS Firebase sdks versions upgraded (from 8.15.0 to 10.3.0)
+- iOS Gamedock versions upgraded (from 5.3.3 to 5.3.4)
 ### Removed
-- iOS Firebase enabling checkbox removed
+- iOS Firebase enable/disable checkbox removed
 
 ## [5.3.11] - 07-12-2022
 ### Fixed
@@ -228,7 +228,7 @@ getConsentStatus function added
 
 ## [5.3.4] - 28-12-2022
 ### Changed
-- iOS Firebase versions upgraded
+- iOS Firebase sdks versions upgraded (from 8.15.0 to 10.3.0)
 
 ## [5.3.3] - 14-12-2022
 ### Fixed
