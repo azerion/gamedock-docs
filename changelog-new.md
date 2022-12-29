@@ -10,9 +10,9 @@
 ## [5.3.12] - 28-12-2022
 ### Changed
 - iOS Firebase sdks versions upgraded (from 8.15.0 to 10.3.0)
-- iOS Gamedock versions upgraded (from 5.3.3 to 5.3.4)
+- iOS Gamedock version upgraded (from 5.3.3 to 5.3.4)
 ### Removed
-- iOS Firebase enable/disable checkbox removed
+- iOS Firebase enable/disable checkbox removed on unity ios setting menu
 
 ## [5.3.11] - 07-12-2022
 ### Fixed
