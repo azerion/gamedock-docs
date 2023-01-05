@@ -7,6 +7,15 @@
 
 #### ** Unity SDK **
 
+## [5.3.13] - 05-01-2023
+### Removed
+- Google-Mobile-Ads-SDK cocoapod dependency removed
+### Fixed
+- iOS Setting Appearing problem fixed in Gamedock Setting Panel
+### Added
+- iOS GoogleUserMessagingPlatform cocoapod dependency added instead of Google-Mobile-Ads-SDK
+- Auto Cocoapod dependency signing script added
+
 ## [5.3.12] - 28-12-2022
 ### Changed
 - iOS Firebase sdks (FirebaseAnalytics,FirebaseCrashlytics,FirebaseDynamicLinks,FirebaseInstallations,FirebaseMessaging,FirebaseRemoteConfig)versions upgraded (from 8.15.0 to 10.3.0)
