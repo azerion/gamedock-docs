@@ -177,6 +177,11 @@ getConsentStatus added for retrieving User Consent status added for Android
 
 #### **Cordova SDK **
 
+## [5.3.5] - 09-01-2023
+### Changed
+- iOS Firebase sdks (FirebaseAnalytics,FirebaseCrashlytics,FirebaseDynamicLinks,FirebaseInstallations,FirebaseMessaging,FirebaseRemoteConfig)versions upgraded (from 8.15.0 to 10.3.0)
+- iOS Gamedock version upgraded (from 5.3.3 to 5.3.4)
+
 ## [5.3.4] - 15-12-2022
 ### Fixed
 - GDPR Flow ATT not allowed case privacy policy page showed second boot problem fixed
